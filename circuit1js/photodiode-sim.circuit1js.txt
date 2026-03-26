@@ -1,0 +1,36 @@
+$ 1 0.000005 10.20027730826997 50 5 50 5e-11
+a 832 528 1040 528 8 3 0 1000000 -0.000011999856137870016 0 100000
+r 880 432 1008 432 0 60000
+w 832 512 832 432 0
+w 832 432 880 432 0
+w 1040 528 1040 432 0
+w 1040 432 1008 432 0
+i 688 512 688 624 0 0.000044999999999999996
+c 896 352 992 352 4 5e-10 -2.6999976136431396 0.001 0
+w 896 352 832 352 0
+w 832 352 832 432 0
+w 992 352 1040 352 0
+w 1040 352 1040 432 0
+x 522 303 1315 306 4 24 Photodiode\ssimulation\s-\scircuit\sconverts\scurrent\son\sphotodiode\sinto\svoltage.
+x 874 598 1068 628 4 24 Op\sAmp\ssupply\sis:\\nV\p\q3V,\sV-\q0V
+p 1136 528 1136 624 3 0 0 10000000
+w 1136 528 1040 528 0
+g 1136 624 1136 672 0 0
+d 752 624 752 512 2 default
+w 752 512 832 512 0
+g 832 544 832 672 0 0
+g 720 624 720 672 0 0
+w 688 624 720 624 0
+w 752 624 720 624 0
+w 688 512 752 512 0
+x 243 478 613 502 4 18 The\sdiode\swith\scurrent\ssource\sis\\nan\sequivalent\sto\sphotodiode\swith\slight\sput\son\sit.
+r 1136 528 1264 528 0 100000
+x 241 531 657 555 4 18 Input\scurrent\sfrom\swithin\sa\srange\sof\s0uA\s-\s50uA\\nis\sconverted\sinto\soutput\svoltage\swithin\srange\s0V\s-\s3V
+c 1264 528 1264 624 4 1e-8 2.673253082957372 0.001 0
+w 1264 624 1136 624 0
+p 1344 528 1344 624 3 0 0 10000000
+w 1264 528 1344 528 0
+w 1264 624 1344 624 0
+x 1285 490 1635 514 4 18 Connect\sinput\sGPIO\sof\smicrocontroller\shere,\\nconfigured\sas\sADC
+x 238 650 602 674 4 18 See\sopamp-i-to-v.circuit1js.txt\sfor\smore\sdetails\\non\show\sthis\scircuit\shas\sbeen\sdesigned.
+x 1185 654 1679 678 4 18 100k\sresistor\sseems\sto\sbe\sa\skind\sof\sprotection\sfor\sGPIO\\n10nF\scap\sseems\sto\sbe\sa\sfilter\sfor\squick\schanges\sof\sinput\ssignal

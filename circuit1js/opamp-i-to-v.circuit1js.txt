@@ -1,0 +1,38 @@
+$ 1 0.000005 10.20027730826997 50 5 50 5e-11
+a 832 528 1040 528 8 3 0 1000000 -0.000009599904000960016 0 100000
+g 832 576 832 672 0 0
+w 832 544 832 576 0
+r 880 432 1008 432 0 60000
+w 832 512 832 432 0
+w 832 432 880 432 0
+w 1040 528 1040 432 0
+w 1040 432 1008 432 0
+i 752 512 752 592 0 0.000041
+w 752 512 832 512 0
+g 752 592 752 672 0 0
+c 896 352 992 352 4 5e-10 -2.4600000000000026 0.001 0
+w 896 352 832 352 0
+w 832 352 832 432 0
+w 992 352 1040 352 0
+w 1040 352 1040 432 0
+x 375 295 1198 298 4 24 Current\sto\svoltage\sconventer\s-\susing\sOp\sAmp\sin\stransimpedance\sconfiguration
+x 874 598 1068 628 4 24 Op\sAmp\ssupply\sis:\\nV\p\q3V,\sV-\q0V
+p 1136 528 1136 624 3 0 0 10000000
+w 1136 528 1040 528 0
+g 1136 624 1136 672 0 0
+x 168 397 436 400 4 18 The\scircuit\sis\sdesigned\sas\sfollows:
+x 168 426 584 450 4 18 Input\scurrent\sfrom\swithin\sa\srange\sof\s0uA\s-\s50uA\\nis\sconverted\sinto\soutput\svoltage\swithin\srange\s0V\s-\s3V
+x 167 474 489 498 4 18 Current\sabove\s50uA\ssaturates\sthe\scircuit\\ntherefore\sthe\s3V\sis\skept\son\soutput.
+x 166 523 519 526 4 18 The\scapacitor\slimits\sthe\sbandwidth\sto\s10kHz.
+x 165 550 613 574 4 18 Op\sAmps\spower\ssupply\sis\s3V,\stherefore\sthe\soutput\ssignal\\ncan\sonly\schange\sin\sthis\srange.
+x 168 745 628 748 4 18 How\sto\stweak/design\sthis\skind\sof\scircuit\sto\syour\sconditions:
+x 166 774 1024 777 4 18 1.\sMake\sup\syour\sdesign\sgoals,\swhat\sinput\scurrent\sis\sexpected\sand\swhat\soutput\svoltage\syou\swould\slike\sfrom\sit.
+x 166 801 625 804 4 18 I.e.:\sI_imin\s\q\s0,\sI_imax\s\q\s50uA.\sV_omin\s\q\s0,\sV_omax\s\q\s3V
+x 161 830 582 833 4 18 2.\sMake\sup\sthe\smax\sbandwidth\syou\swould\sto\ssupport.
+x 163 857 275 860 4 18 I.e.\sF\s\q\s10kHz
+x 160 884 486 887 4 18 3.\sCalculate\sthe\sresistor\svalue\sas\sfollows:
+x 161 907 417 910 4 18 R\s\q\s(V_omax\s-\sV_omin)\s/\sI_imax
+x 157 935 497 938 4 18 4.\sCalculate\sthe\scapacitor\svalue\sas\sfollows:
+x 158 959 308 962 4 18 C\s<\q\s1\s/\s(2*pi*R*F)
+x 157 989 942 992 4 18 5.\sMake\ssure\syou\spower\ssupply\sthe\sopamp\swith\svoltage\sat\sleast\sof\svalue\sthat\sis\swithin\soutput\srange.
+x 159 1016 1213 1019 4 18 I.e.\sif\syou\sdesigned\sthe\scircuit\sto\shave\soutput\svoltage\srange\s0\s-\s3V,\sthen\sthe\sop\samp's\sV-\smust\sbe\s0V\sor\sless,\sV\p\smust\sbe\s3V\sor\shigher.
